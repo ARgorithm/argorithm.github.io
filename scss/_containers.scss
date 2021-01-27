@@ -1,0 +1,35 @@
+.row{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+
+    .col1{
+        flex: 0 0 40%;
+        justify-content: end;
+
+        p{
+            font-family: 'IBM Plex Sans', sans-serif;
+            text-align: center;
+        }
+    }
+
+    .col2{
+        flex: 0 0 60%;
+    }
+}
+
+@media (max-width: 1300px){
+    .row {
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    
+
+    .col1 .col2{
+        flex: 0 0 50%;
+        justify-content: center;
+    }
+}
