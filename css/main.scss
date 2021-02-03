@@ -103,10 +103,12 @@ p {
 }
 
 button {
-  color: white;
   border: 1px solid white;
+  border-color: #F9413C;
+  color: #F9413C;
   border-radius: 20px;
   padding: 12px 25px 10px 25px;
+  margin: 5px;
   font-size: 14px;
   background-color: transparent;
   cursor: pointer;
@@ -114,6 +116,11 @@ button {
   &.grey {
     color: $dark-text;
     border-color: $dark-text;
+  }
+
+  :active,:hover{
+    color: white;
+    border-color: white;
   }
 }
 
