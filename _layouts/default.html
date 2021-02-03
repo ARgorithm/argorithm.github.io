@@ -1,0 +1,24 @@
+{% include values.inc %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>ARgorithm</title>
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}" />
+  {% if page.stylesheet %}
+    <link rel="stylesheet" href="{{ "/css/" | append: page.stylesheet | append: ".css" | relative_url }}" />
+  {% endif %}
+  </head>
+
+  <body>
+    {% include header.html %}
+    <div id="content">{{ content }}</div>
+    {% include footer.html %}
+    
+  </body>
+</html>

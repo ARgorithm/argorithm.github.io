@@ -1,49 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>ARgorithm</title>
-</head>
-<body>
-    <section class="sticky">
-    <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        
+---
+stylesheet: index
+---
+
+{% include values.inc %}
+
+<div id="jumbotron">
+    <div>
+      <div class="grid">
+        <div class="col-5_md-12 main">
+          <div>
+            <h1>Visualise your data structures in augmented reality</h1>
+            <p>
+              ARgorithm is an open source technology designed for creating visualisations of data structures and algorithms in augmented reality.
+            </p>
+            <button id="getStarted" onclick="window.location.href='{{ githubLink }}'">
+              <img src="{{ "/images/github-teal.svg" | relative_url }}" />
+              <span>The Source</span>
+            </button>
+            <button id="getStarted" onclick="window.location.href='{{ docslink }}/start'">
+              <span>Get Started</span>
+            </button>
+            <button id="getStarted" onclick="window.location.href='{{ serverlink }}'">
+              <span>Setup Server</span>
+            </button>
+            <button id="getStarted" onclick="window.location.href='{{ downloadapp }}'">
+              <span>Download App</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-7_md-12_md-first hero">
+          <div>
+            <img class="img" src="{{ "/images/hero.svg" | relative_url }}" srcset="{{ "/images/hero.svg" | relative_url }} 1x, {{ "/images/hero.svg" | relative_url }} 2x, {{ "/images/hero.svg" | relative_url }} 3x" alt="ARgorithm hero image" />
+          </div>
+        </div>
+      </div>
     </div>
-    </section>
-    <section class="hero">
-        
-        <div class="row">
-            <div class="col1">
-                <div class="hero-title">
-                    <h1 class="hero-text"><span>AR</span>gorithm</h1>
-                    <ul class="hero-subs">
-                        <li><a href="/toolkit">Toolkit</a></li>
-                        <li><a href="/toolkit/server">Server</a></li>
-                        <li><a href="https://github.com/ARgorithm/Unity-App">Application</a></li>
-                    </ul>
-                    <p>Visualise your data structures and algorithms<br> in augmented reality</p>
-                </div>
-                
-            </div>
-            <div class="col2">
-                <div class="hero-img">
-                    <img src="img/hero.svg">
-                </div>
-            </div>
+  </div>
+
+  <div id="useCases1" class="use-cases">
+    <div>
+      <div class="grid">
+        <div class="col-6_md-12_md-first">
+          <img src="{{ "/images/screenshot.png" | relative_url }}"
+            alt="Provision and manage cloud infrastructure" />
+        </div>
+        <div class="col-6_md-12">
+          <h2>Improving the standards of software engineering education</h2>
+          <p>
+            Augmented reality is the future of visual aids and are slowly but surely creep their way into 
+            the education industry especially in medical education and early education. 
+            ARgorithm hopes to introduce augmented reality to software engineering courses by giving easy 
+            tools to create, broadcast and view augmented reality visualisations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="blueprint">
+    <div class="blueprint-header">
+      <h2>Why use <span id="red-text">AR</span>gorithm?</h2>
+      
+    </div>
+    <div class="grid">
+      <div class="blueprint-items col-10_md-12 grid">
+        <div class="blueprint-item col-11_xs-10">
+          <h3>Dynamic visualisations designed to educate</h3>
+          <p>The augmented reality visualisations made using ARgorithm are dynamic in nature. Once you submit your code, the visualisations
+            are generated in real time based on user input. Hence you can visualise how the same code reacts to different inputs. The
+            ARgorithm comment system allows you to explain your algorithms step by step along with the visualisation.
+          </p>
+        </div>
+        <div class="blueprint-item col-11_xs-10">
+          <h3>Flexible Use</h3>
+          <p>Your ARgorithm Server deployment can be vastly customised. You can run it on your local machine. You can run it as a docker image on a cluster
+            You can customise features such as authentication, database and storage upto your liking. 
+            The server repository contains kubernetes and docker-compose configuration files for different types of deployments
+          </p>
+        </div>
+        <div class="blueprint-item col-11_xs-10">
+          <h3>Focus on your algorithms</h3>
+          <p>ARgorithmToolkit provides an abstract interface to create your visualisations much similar to the STL in C++
+            so that you can focus on implementing your algorithm. ARgorithmToolkit comes with a CLI which provides an easy interface
+            to setup your environment and interact with server.
+          </p>
+        </div>
+        <div class="blueprint-item col-11_xs-10">
+          <h3>Well documented</h3>
+          <p>We at ARgorithm make sure that every release is well documented with API level documentation as well tutorials explaining
+            everything from the working of ARgorithm to how you can use ARgorithm for your use case
+          </p>
         </div>
         
-    </section>
-</body>
-</html>
+      </div>
+      
+    </div>
+  </div>
+  <div id="openSource">
+    <div>
+      <div class="grid">
+        <div class="col-12">
+          <h2>ARgorithm is open source and community driven</h2>
+          <p>ARgorithm is an open source project designed to aid the software engineering community. 
+            <br>ARgorithm is released under the MIT license.
+            We remain committed to the community and will always be vendor neutral.</p>
+          <button onclick="window.location.href='{{ githubLink }}'">
+            Start contributing
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

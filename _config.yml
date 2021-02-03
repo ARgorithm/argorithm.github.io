@@ -1,0 +1,25 @@
+title: ARgorithm
+url: "http://argorithm.github.io" 
+
+markdown: kramdown
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-babel
+  - jekyll-readme-index
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - build
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+sass:
+  sass_dir: ./_scss
