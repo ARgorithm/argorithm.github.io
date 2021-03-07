@@ -4,6 +4,7 @@ url: "http://argorithm.github.io"
 markdown: kramdown
 
 plugins:
+  - jekyll-octicons
   - jekyll-relative-links
   - jekyll-babel
   - jekyll-readme-index

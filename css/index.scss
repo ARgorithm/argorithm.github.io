@@ -179,7 +179,7 @@
   padding: 45px 0 30px;
 
   @media (max-width: $md-width) {
-    padding: 45px 0 220px;
+    padding: 45px 0 80px;
   }  
 
   .blueprint-header {
@@ -201,6 +201,8 @@
 
   p {
     font-size: 16px;
+    text-align: justify;
+    text-justify: auto;
   }
 
   .blueprint-img {
@@ -228,9 +230,9 @@
 .use-cases {
   background-color: $white;
   color: $dark-blue-text;
-  text-align: left;
-  padding-top: 80px;
-  padding-bottom: 65px;
+  text-align: justify;
+  text-justify: auto;
+  padding-top: 40px;
 
   a {
     color: #212529;
@@ -268,7 +270,7 @@
 }
 
 #useCases1 {
- padding-bottom: 100px;
+ padding-bottom: 10px;
  overflow: initial;
 
  .grid > div > img {

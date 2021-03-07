@@ -183,7 +183,7 @@ body {
   .hamburger-controls {
     position: absolute;
     right: 30px;
-    top: 40px;
+    top: 115px;
     display: none;
     cursor: pointer;
 
@@ -420,8 +420,7 @@ body {
   }
 }
 
-/* Crossplane survey banner */
-#surveyBanner {
+.announcements{
   height: 75px;
   display: flex;
   display: -ms-flexbox;
@@ -429,21 +428,17 @@ body {
   -ms-flex-pack: center;
   flex-direction: column;
   -ms-flex-direction: column;
-  background: #F9413C;
+  background: #FEBC2C;
 
-  & > div {
-    text-align: center;
-    display: flex;
-    display: -ms-flexbox;
-    width: 100%;
-    justify-content: center;
-    -ms-flex-pack: center;
-    flex-direction: row;
-    -ms-flex-direction: row;
-  }
-
-  span {
-    font-weight: 900;
+  div {
+      text-align: center;
+      display: flex;
+      display: -ms-flexbox;
+      width: 100%;
+      justify-content: center;
+      -ms-flex-pack: center;
+      flex-direction: row;
+      -ms-flex-direction: row;
   }
 
   a {
@@ -451,17 +446,10 @@ body {
     color: #000;
   }
 
-  @media (max-width: $md-width) {
-    height: 100px;
-    padding: 0 15px;
-
-    & > div {
-      flex-direction: column;
-      -ms-flex-direction: column;
-    }
-
-    span {
-      margin-bottom: 7px;
-    }
+  span{
+    font-weight: 900;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+
 }
