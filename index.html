@@ -17,10 +17,10 @@ stylesheet: index
               <img src="{{ "/images/github-teal.svg" | relative_url }}" />
               <span>The Source</span>
             </button>
-            <button onclick="window.location.href='{{ docslink }}/start'">
+            <button onclick="window.location.href='{{ pypipage }}'">
               <span>Get Started</span>
             </button>
-            <button  onclick="window.location.href='{{ serverlink }}'">
+            <button  onclick="window.location.href='{{ dockerimage }}'">
               <span>Setup Server</span>
             </button>
             <button onclick="window.location.href='{{ downloadapp }}'">
@@ -104,7 +104,7 @@ stylesheet: index
           <p>ARgorithm is an open source project designed to aid the software engineering community. 
             <br>ARgorithm is released under the MIT license.
             We remain committed to the community and will always be vendor neutral.</p>
-          <button onclick="window.location.href='{{ githubLink }}'">
+          <button id="contributing" onclick="window.location.href='{{ githubLink }}'">
             Start contributing
           </button>
         </div>

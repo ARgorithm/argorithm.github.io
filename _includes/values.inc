@@ -1,5 +1,6 @@
 {% assign githubLink = "https://github.com/ARgorithm" %}
-{% assign serverlink = "https://github.com/ARgorithm/Server" %}
+{% assign serverlink = "https://argorithm.github.io/Server" %}
 {% assign docslink = "https://argorithm.github.io/toolkit" %}
 {% assign downloadapp = "https://github.com/ARgorithm/Unity-App" %}
 {% assign pypipage = "https://pypi.org/project/ARgorithmToolkit/" %}
+{% assign dockerimage = "https://hub.docker.com/r/alanjohn/argorithm-server" %}
